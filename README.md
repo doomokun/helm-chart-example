@@ -16,7 +16,10 @@ git repo: https://github.com/doomokun/helm-chart-example.git
 - 第一次要得一陣，佢會show git pages URL
 - 之後curl test佢，例：```$ curl https://gree-gorey.github.io/helm-example/index.yaml```
 ---
-
+# helm package筆記
+- package係跟Chart.yaml既name打包
+- tgz個名唔重要，helm repo index係根據tgz打包前Chart.yaml既name決定entries name
+---
 # Chart Commands
 加入repo
 ```
