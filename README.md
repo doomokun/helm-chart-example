@@ -9,7 +9,7 @@
 - git flow 一樣，一樣係git push
 - resource需要一個index.yaml，內有chart資訊
 - 加一個helm package，由```$ helm package #{helm create NAME}```創建，會係一個.tgz
-- index.yaml 更新 .tgz URL資訊，即git pages url
+- ```$ helm repo index . --url https://github.com/doomokun/3-tier-app-chart.git ```，index.yaml 更新 .tgz URL資訊，即git pages url
 - 使用git pages需要去git repo設定，去git repo setting -> pages -> set branch
 - 第一次要得一陣，佢會show git pages URL
 - 之後curl test佢，例：```$ curl https://gree-gorey.github.io/helm-example/index.yaml```
